@@ -21,7 +21,7 @@ public class Hippogriff extends Jet{
 
 	@Override
 	public String toString() {
-		return "Type: " + getModel() + ", Speed: " + getSpeed() + " mph, Range: " + getRange() + " miles, Price: "
+		return "Type: " + getModel() + ", Speed: " + getSpeed() + " mph, Range: " + getRange() + " miles, Price: $"
 				+ getPrice();
 	}
 

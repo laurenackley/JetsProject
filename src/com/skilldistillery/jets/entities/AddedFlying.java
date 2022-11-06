@@ -21,7 +21,7 @@ public class AddedFlying extends Jet {
 
 	@Override
 	public String toString() {
-		return "Type: " + getModel() + ", Speed: " + getSpeed() + ", Range: " + getRange() + ", Price: " + getPrice();
+		return "Type: " + getModel() + ", Speed: " + getSpeed() + ", Range: " + getRange() + ", Price: $" + getPrice();
 
 	}
 }

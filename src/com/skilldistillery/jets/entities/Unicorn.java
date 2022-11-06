@@ -19,7 +19,7 @@ public class Unicorn extends Jet implements MythicalAnimal {
 
 	@Override
 	public String toString() {
-		return "Type: " + getModel() + ", Speed: " + getSpeed() + " mph, Range: " + getRange() + " miles, Price: " + getPrice();
+		return "Type: " + getModel() + ", Speed: " + getSpeed() + " mph, Range: " + getRange() + " miles, Price: $" + getPrice();
 	}
 
 	@Override

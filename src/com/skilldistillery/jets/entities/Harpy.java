@@ -25,7 +25,7 @@ public class Harpy extends Jet implements CombatReady{
 	@Override
 	public String toString() {
 		return "Type: "+getModel() + ", Speed: " + getSpeed() + " mph, Range: " + getRange()
-				+ " miles, Price: " + getPrice();
+				+ " miles, Price: $" + getPrice();
 	}
 
 	@Override

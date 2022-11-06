@@ -20,6 +20,6 @@ public class Airplane extends Jet{
 	@Override
 	public String toString() {
 		return "Type: "+getModel() + ", Speed: " + getSpeed() + " mph, Range: " + getRange()
-				+ " miles, Price: " + getPrice();
+				+ " miles, Price: $" + getPrice();
 	}
 }

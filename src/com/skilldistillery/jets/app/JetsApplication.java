@@ -70,18 +70,19 @@ public class JetsApplication {
 
 			case 4: // view the longest range
 
-				Integer range = 0;
+				int range = 0;
 				double longestRange = 0;
 				double speed = 0;
-
+				int index1 = 0;
 				for (int i = 0; i < (af.getFleet().size()); i++) {
 					if (af.getFleet().size() != 0) {
 						range = af.getFleet().get(i).getRange();
 						speed = af.getFleet().get(i).getSpeed();
 						i++;
 						if (range > longestRange) {
-							longestRange = ((double) range) * speed;
-							System.out.println(af.getFleet().get(i));
+							longestRange = (((double) range) * speed);
+							index1 = i;
+							System.out.println(af.getFleet().get(index1));
 						}
 					}
 				}

@@ -45,34 +45,32 @@ public class AirField {
 	public void addObj() {
 
 		for (int i = 0; i < 10; i++) {
-			if(i ==0) {
-			System.out.println("Thanks for wanting to add to the fun.");
-			}
-			else {
-			System.out.println("Please enter the type of flying object.");
-			String model = sc.next();
-			
-			
-			System.out.println("Please enter how fast they can fly.");
-			Double speed = sc.nextDouble();
+			if (i == 0) {
+				System.out.println("Thanks for wanting to add to the fun.");
+			} else {
+				System.out.println("Please enter the type of flying object.");
+				String model = sc.next();
 
-			System.out.println("What is the objects range?");
-			Integer range = sc.nextInt();
-			sc.nextLine();
+				System.out.println("Please enter how fast they can fly.");
+				Double speed = sc.nextDouble();
 
-			System.out.println("How much does it cost?");
-			Long price = sc.nextLong();
+				System.out.println("What is the objects range?");
+				Integer range = sc.nextInt();
+				sc.nextLine();
 
-			AddedFlying added = new AddedFlying(model, speed, range, price);
-			fleet.add(added);
+				System.out.println("How much does it cost?");
+				Long price = sc.nextLong();
 
-			System.out.println("Do you want to stop adding objects? Type yes if so.");
-			String option = sc.next();
-			if (option.equalsIgnoreCase("yes")) {
-				break;
-			}else if(!option.equalsIgnoreCase("yes")) {
-				continue;
-			}
+				AddedFlying added = new AddedFlying(model, speed, range, price);
+				fleet.add(added);
+
+				System.out.println("Do you want to stop adding objects? Type yes if so.");
+				String option = sc.next();
+				if (option.equalsIgnoreCase("yes")) {
+					break;
+				} else if (!option.equalsIgnoreCase("yes")) {
+					continue;
+				}
 			}
 		}
 	}
@@ -81,7 +79,7 @@ public class AirField {
 
 		System.out.println("What would you like to remove ");
 		for (int i = 0; i < getFleet().size(); i++) {
-			System.out.print(i +" "+ getFleet().get(i).getModel()+" ");
+			System.out.print(i + " " + getFleet().get(i).getModel() + " ");
 		}
 		fleet.remove(sc.nextInt());
 
