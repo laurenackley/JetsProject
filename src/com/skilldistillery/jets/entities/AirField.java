@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/// going to be large with a lot of methods -- going to read from text file in here. Did so in name separator 
 public class AirField {
 	private ArrayList<Jet> fleet = new ArrayList<Jet>();
 	java.util.Scanner sc = new java.util.Scanner(System.in);
@@ -51,14 +50,14 @@ public class AirField {
 				System.out.println("Please enter the type of flying object.");
 				String model = sc.next();
 
-				System.out.println("Please enter how fast they can fly.");
+				System.out.println("Please enter how fast they can fly in mph.");
 				Double speed = sc.nextDouble();
 
-				System.out.println("What is the objects range?");
+				System.out.println("What is the objects range in miles?");
 				Integer range = sc.nextInt();
 				sc.nextLine();
 
-				System.out.println("How much does it cost?");
+				System.out.println("How much does it cost in dollars?");
 				Long price = sc.nextLong();
 
 				AddedFlying added = new AddedFlying(model, speed, range, price);

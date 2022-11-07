@@ -1,7 +1,7 @@
 package com.skilldistillery.jets.entities;
 
 public class AddedFlying extends Jet {
-	
+
 	public AddedFlying() {
 
 	}
@@ -14,9 +14,11 @@ public class AddedFlying extends Jet {
 	@Override
 	public String fly() {
 		// TODO Auto-generated method stub
-		Double length = getSpeed()*((double)getRange());
-		return getModel() + " can fly up to "+length+" miles"; // change later
-	
+//prints out the jet details and the amount of time the jet can fly until it runs out of fuel 
+		Double length = getSpeed() * ((double) getRange());
+		double time = length / getSpeed();
+		return getModel() + " can fly up to " + length + " miles. It would take " + time
+				+ " hours before it couldn't continue flying."; // change later
 	}
 
 	@Override

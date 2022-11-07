@@ -1,22 +1,20 @@
 package com.skilldistillery.jets.entities;
 
-public class Hippogriff extends Jet{
+public class Hippogriff extends Jet {
 
 	public Hippogriff() {
 	}
 
 	public Hippogriff(String model, Double speed, Integer range, Long price) {
 		super(model, speed, range, price);
-		// TODO Auto-generated constructor stub
-
 	}
 
 	@Override
 	public String fly() {
-		// TODO Auto-generated method stub
-		Double length = getSpeed()*((double)getRange());
-		return getModel() + " can fly up to "+length+" miles"; // change later
-	
+		Double length = getSpeed() * ((double) getRange());
+		double time = length / getSpeed();
+		return getModel() + " can fly up to " + length + " miles. It would take " + time
+				+ " hours before it couldn't continue flying."; // change later
 	}
 
 	@Override

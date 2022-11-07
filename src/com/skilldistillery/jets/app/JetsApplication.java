@@ -11,11 +11,8 @@ public class JetsApplication {
 	Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-//only main
-
 		JetsApplication jA = new JetsApplication();
 
-		// AirField af = new AirField();
 		jA.MenuChoices();
 	}
 
@@ -42,16 +39,14 @@ public class JetsApplication {
 					System.out.println(af.getFleet().get(i));
 				}
 				break;
-			case 2: // make them fly
+			case 2:
+
 				for (int i = 0; i < (af.getFleet().size()); i++) {
 					System.out.println(af.getFleet().get(i).fly());
 				}
 				break;
-			case 3: // view the fastest
-//list the objects, for loop to check for fastest, then print at the end
-				// .getSpeed then compare
-				// af.getFleet().get(0).getSpeed
-//				
+			case 3:
+
 				double speeds = 0;
 				double topSpeed = 0;
 				int index = 0;
@@ -66,9 +61,8 @@ public class JetsApplication {
 				}
 				System.out.println(af.getFleet().get(index));
 				break;
-//PRINTING OUT TWO INSTEAD OF ONE
 
-			case 4: // view the longest range
+			case 4:
 
 				int range = 0;
 				double longestRange = 0;
@@ -89,30 +83,30 @@ public class JetsApplication {
 
 				break;
 
-			case 5: // what is an animal? subject to change
+			case 5:
 				Unicorn unicorn1 = new Unicorn();
 				unicorn1.magical();
 				break;
 
-			case 6: // what can fight? subject to change
+			case 6:
 				Harpy harpy1 = new Harpy();
 				harpy1.fight();
 				Dragon dragon1 = new Dragon();
 				dragon1.fight();
 				break;
 
-			case 7: // add a flying object
+			case 7:
 				af.addObj();
 				break;
 
-			case 8: // remove a flying object
+			case 8:
 				af.removeObj();
 				break;
 
-			case 9: 
+			case 9:
 				System.out.println("Thanks for playing. Program ending");
 				break;
-				
+
 			default:
 				System.out.println("You have selected an invalid option. Please try again.");
 				break;
