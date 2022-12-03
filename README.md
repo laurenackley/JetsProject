@@ -5,7 +5,7 @@ This is a program that reads in Jets/Flying objects from a file and stores it in
 Option 3 will tell you which flies the fastest. Option 4 was the hardest for me to figure out. I had an issue where it would only print the one that was already in the jets.txt file. The next 2 options are implementations of interfaces. 
 You can add objects and remove them.
 
-#Technology Used
+# Technology Used
 - Eclipse
 - GitHub
 - Terminal
